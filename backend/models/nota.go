@@ -5,6 +5,7 @@ type Nota struct {
 	ID           int64   `json:"id"`
 	Estudiante   string  `json:"estudiante"`
 	Curso        string  `json:"curso"`
+	Grado        string  `json:"grado"`
 	Calificacion float64 `json:"calificacion"`
 }
 
@@ -13,6 +14,7 @@ type NotaMemento struct {
 	ID           int64   `json:"id,omitempty"`
 	NotaID       int64   `json:"nota_id"`
 	Calificacion float64 `json:"calificacion"`
+	Fecha        string  `json:"fecha,omitempty"`
 }
 
 // PATRÓN MEMENTO: El Originator produce un snapshot con su estado actual
